@@ -1,0 +1,4 @@
+[tools]
+android-sdk = "23.0"
+gradle = "8.7.0"
+java = "temurin-17.0.20+101"
