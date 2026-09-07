@@ -14,6 +14,7 @@ import android.security.keystore.KeyProperties
 import android.util.Base64
 import android.util.TypedValue
 import android.view.View
+import android.view.ViewGroup
 import android.view.WindowManager
 import android.widget.ProgressBar
 import android.widget.TextView
@@ -70,6 +71,12 @@ class MainActivity : Activity() {
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         setContentView(R.layout.activity_main)
         bindViews()
+        runCatching {
+            addContentView(
+                CatOverlayView(this),
+                ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT),
+            )
+        }
         immersive()
         credentials.import(File(filesDir, "auth.json"))
         checkParser()
