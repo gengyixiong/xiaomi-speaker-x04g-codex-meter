@@ -6,11 +6,11 @@ Codex Meter connects directly to your Codex account and shows your current usage
 
 ## Demo
 
+![Pixel cat overlay animation](demo/pixel-cat-demo.gif)
+
 ![Two pixel cats appearing over the Codex Meter](demo/pixel-cat-overlay-two-cats.png)
 
 ![Black pixel cat appearing from the left edge](demo/pixel-cat-overlay-black-cat.png)
-
-[▶ Watch the full pixel-cat overlay video](demo/pixel-cat-demo.mp4)
 
 ## Features
 
